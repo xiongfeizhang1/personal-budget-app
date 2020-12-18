@@ -7,10 +7,12 @@ import {
 
 function Menu() {
   return (
-    <div>
+    <div id="menuBar">
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
             <li><Link to="/login">Login</Link></li>
+            <li><Link to="/budget">Dashboard</Link></li>
+
+            
     </div>
   );
 }

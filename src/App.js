@@ -1,16 +1,19 @@
-import React from 'react';
-import AboutPage from './AboutPage/AboutPage';
+import React, { Component } from 'react';
 import Hero from './Hero/Hero';
 import HomePage from './HomePage/HomePage';
 import LoginPage from './LoginPage/LoginPage';
 import Menu from './Menu/Menu';
+import BudgetPage from './BudgetPage/BudgetPage';
+import Chart from './components/Chart';
 
 
 import {
   BrowserRouter as Router,
   Switch,
   Route,
+
 } from "react-router-dom";
+
 
 
 function App() {
@@ -19,19 +22,20 @@ function App() {
       <Menu/>
       <Hero/>
       <div className="mainContainer">
+      <HomePage/>
         <Switch>
-          <Route path="/about">
-            <AboutPage/>
+         <Route path="/home">
+            <HomePage/>
           </Route>
           <Route path="/login">
             <LoginPage/>
           </Route>
-          <Route path="/home">
-            <HomePage/>
+          <Route path="/budget">
+            <BudgetPage/>
+            <Chart/>
           </Route>
         </Switch>
       </div>
-      <HomePage/>
     </Router>
   );
 }

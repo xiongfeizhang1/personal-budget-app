@@ -1,5 +1,6 @@
 const express = require('express');
 const mysql = require('mysql');
+const exJwt = require("express-jwt");
 
 //database on port 3001, react website on port 3000
 const port = process.env.port || 3001;
@@ -18,14 +19,6 @@ var connection = mysql.createConnection({
 
 
 
-app.get('/', async (req, res) => {
-    connection.connect();
-    connection.query('SELECT * FROM budget', function (error, results, fields) {
-        connection.end();
-        if(error) throw error;
-        res.json(results);
-    });
-});
 
 
 app.listen(port, () => {

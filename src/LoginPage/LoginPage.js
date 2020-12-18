@@ -28,9 +28,18 @@ class LoginPage extends React.Component{
 
   render() {
     return (
+      <section id = "googleLogin">
+        <br>
+        </br>
+        <h2>
+          Login using your Google Account
+        </h2>
+      
       <div>
           <button id= "loginButton">Sign in with Google</button>
       </div>
+
+      </section>
     );
     
   }

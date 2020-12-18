@@ -9,6 +9,7 @@
     "axios": "^0.21.0",
     "chart.js": "^2.9.4",
     "express": "^4.17.1",
+    "express-jwt": "^6.0.0",
     "mysql": "^2.18.1",
     "react": "^17.0.1",
     "react-chartjs-2": "^2.11.1",

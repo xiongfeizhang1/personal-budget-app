@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(189, 222, 226);
+}
+
+#main {
+    text-align: center;
+}
+
+#budget{
+    text-align: center;
+}
+
+#googleLogin{
+    text-align: center;
+}
+
+.hero{
+    text-align: center;
+}
