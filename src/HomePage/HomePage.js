@@ -7,7 +7,7 @@ import {Pie} from 'react-chartjs-2';
 
 function HomePage() {
   return (
-    <div>
+    <div className="info" id="main">
         HomePage
     </div>
   );
