@@ -4,7 +4,7 @@ import HomePage from './HomePage/HomePage';
 import LoginPage from './LoginPage/LoginPage';
 import Menu from './Menu/Menu';
 import BudgetPage from './BudgetPage/BudgetPage';
-import Chart from './components/Chart';
+
 
 
 import {
@@ -32,7 +32,6 @@ function App() {
           </Route>
           <Route path="/budget">
             <BudgetPage/>
-            <Chart/>
           </Route>
         </Switch>
       </div>
